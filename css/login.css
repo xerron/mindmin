@@ -1,0 +1,213 @@
+/* line 4, ../scss/login.scss */
+body {
+  background: none repeat scroll 0% 0% #F1F1F1;
+  min-width: 0px;
+  color: #444;
+  font-family: "Open Sans",sans-serif;
+  font-size: 13px;
+  line-height: 1.4em;
+}
+
+/* line 13, ../scss/login.scss */
+body, html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 19, ../scss/login.scss */
+label {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* line 24, ../scss/login.scss */
+input, textarea {
+  box-sizing: border-box;
+}
+
+/* line 28, ../scss/login.scss */
+input[type="checkbox"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime-local"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="radio"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus {
+  border-color: #5B9DD9;
+  box-shadow: 0px 0px 2px rgba(30, 140, 190, 0.8);
+}
+
+/* line 33, ../scss/login.scss */
+input[type="checkbox"], input[type="color"], input[type="date"], input[type="datetime-local"], input[type="datetime"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="radio"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea {
+  border: 1px solid #DDD;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07) inset;
+  background-color: #FFF;
+  color: #333;
+  outline: 0px none;
+  transition: border-color 0.05s ease-in-out 0s;
+}
+
+/* line 42, ../scss/login.scss */
+a {
+  color: #0074A2;
+  transition-property: border, #CECECE, color;
+  transition-duration: 0.05s;
+  transition-timing-function: ease-in-out;
+  outline: 0px none;
+}
+
+/* line 50, ../scss/login.scss */
+a:active, a:hover {
+  color: #2EA2CC;
+}
+
+/* line 54, ../scss/login.scss */
+#login {
+  width: 320px;
+  padding: 8% 0px 0px;
+  margin: auto;
+}
+
+/* line 60, ../scss/login.scss */
+#login form p {
+  margin-bottom: 0px;
+  line-height: 1.5;
+}
+
+/* line 65, ../scss/login.scss */
+.login * {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 70, ../scss/login.scss */
+.login h1 {
+  text-align: center;
+}
+
+/* line 74, ../scss/login.scss */
+.login form {
+  margin-top: 20px;
+  margin-left: 0px;
+  padding: 26px 24px 46px;
+  font-weight: 400;
+  overflow: hidden;
+  background: none repeat scroll 0% 0% #FFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+/* line 84, ../scss/login.scss */
+.login label {
+  color: #777;
+  font-size: 14px;
+}
+
+/* line 89, ../scss/login.scss */
+.login #nav {
+  margin: 24px 0px 0px;
+}
+
+/* line 93, ../scss/login.scss */
+.login #backtoweb, .login #nav {
+  font-size: 13px;
+  padding: 0px 24px;
+}
+
+/* line 98, ../scss/login.scss */
+#backtoweb {
+  margin: 16px 0px 0px;
+}
+
+/*
+theme
+*/
+/* line 106, ../scss/login.scss */
+.login #backtoweb a, .login #nav a {
+  text-decoration: none;
+  color: #999;
+}
+
+/* line 110, ../scss/login.scss */
+.login #backtoweb a:hover, .login #nav a:hover, .login h1 a:hover {
+  color: #2EA2CC;
+}
+
+/* line 114, ../scss/login.scss */
+.login form .input, .login input[type="text"] {
+  font-size: 24px;
+  padding: 3px;
+  margin: 2px 6px 16px 0px;
+  width: 100%;
+}
+
+/* line 121, ../scss/login.scss */
+.login form .input, .login form input[type="checkbox"], .login input[type="text"] {
+  background: none repeat scroll 0% 0% #FBFBFB;
+}
+
+/* line 125, ../scss/login.scss */
+.login form .forgetmenot label {
+  font-size: 12px;
+  line-height: 19px;
+}
+
+/* line 130, ../scss/login.scss */
+.login h1 a {
+  background: none, url("../images/mindmin-logo.svg?ver=20150307") no-repeat center top;
+  color: #999;
+  background-size: 84px auto;
+  height: 84px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0px auto 25px;
+  padding: 0px;
+  text-decoration: none;
+  width: 84px;
+  text-indent: -9999px;
+  outline: 0px none;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 148, ../scss/login.scss */
+.button-login {
+  height: 40px;
+  width: 100%;
+  line-height: 28px;
+  padding: 0px 12px 2px;
+  vertical-align: baseline;
+  background: none repeat scroll 0% 0% #0a80cc;
+  box-shadow: 0px 1px 0px rgba(120, 200, 230, 0.5) inset, 0px 1px 0px rgba(10, 111, 186, 0.15);
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #222;
+  border-radius: 3px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/* line 165, ../scss/login.scss */
+.button-login:hover {
+  background: none repeat scroll 0% 0% #2c2c2c;
+  border-color: #222222;
+  box-shadow: 0px 1px 0px rgba(90, 90, 90, 0.6) inset;
+  color: #FFF;
+}
+
+/* line 172, ../scss/login.scss */
+p.submit {
+  margin-top: 15px;
+}
+
+/*
+mensajes
+*/
+/* line 180, ../scss/login.scss */
+.login #login_error {
+  border-left: 4px solid #DD3D36;
+  background: none repeat scroll 0% 0% #FFF;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 186, ../scss/login.scss */
+#login_error, .login .message {
+  margin-left: 0px;
+  padding: 12px;
+}

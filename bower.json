@@ -1,0 +1,23 @@
+{
+  "name": "mindmin",
+  "version": "1.0.0",
+  "authors": [
+    "E. Manuel Cerrón Angeles <xerron.angels@gmail.com>"
+  ],
+  "description": "Admin template focus UX",
+  "main": "css/main.css",
+  "keywords": [
+    "admin",
+    "templates"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xerron/mindmin",
+  "private": true,
+  "dependencies": {
+    "foundation": "~5.5.1",
+    "backbone": "~1.1.2",
+    "foundation-icon-fonts": "*",
+    "slimscroll": "~1.3.3",
+    "navgoco": "~0.2.1"
+  }
+}

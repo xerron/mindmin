@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mindmin | Login</title>
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body class="login">
+<div id="login">
+    <h1><a href="https://github.com/xerron/mindmin" title="Edwin Manuel Cerrón Angeles" tabindex="-1">Mindmin</a></h1>
+    <!--<div id="login_error">	<strong>ERROR</strong>: nombre de usuario no válido. ¿<a href="#">Has olvidado tu contraseña</a>?<br /></div>-->
+    <form name="loginform" id="loginform" action="#" method="post">
+        <p>
+            <label for="user_login">Nombre de usuario<br/>
+                <input type="text" name="log" id="user_login" class="input" value="" size="20" autofocus /></label>
+        </p>
+
+        <p>
+            <label for="user_pass">Contraseña<br/>
+                <input type="password" name="pwd" id="user_pass" class="input" value="" size="20"/></label>
+        </p>
+
+        <p class="forgetmenot">
+            <label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"/> Recuérdame</label>
+        </p>
+
+        <p class="submit">
+            <input type="submit" name="mind-submit" id="mind-submit" class="button-login" value="Acceder"/>
+        </p>
+    </form>
+
+    <p id="nav">
+        <a href="#" title="Recupera tu contraseña perdida">¿Has perdido tu contraseña?</a>
+    </p>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("user_login").focus();
+        };
+    </script>
+
+    <!--<p id="backtoweb"><a href="#" title="¿Te has perdido?">&laquo; Volver</a></p>-->
+
+</div>
+<div class="clear"></div>
+</body>
+</html>

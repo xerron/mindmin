@@ -1,0 +1,268 @@
+/* line 1, ../scss/layout/_main.scss */
+main {
+  display: block;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 7, ../scss/layout/_main.scss */
+#content-container {
+  margin-left: 220px;
+  padding-top: 2px;
+}
+
+/* line 12, ../scss/layout/_main.scss */
+#notification-container .alert-box {
+  margin-bottom: 0em;
+  margin-top: 1em;
+}
+
+/* aside menu */
+/* line 3, ../scss/layout/_nav.scss */
+#nav-container {
+  top: 0px;
+  z-index: 10;
+  left: 0px;
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  margin-top: 45px;
+  background-color: #FFF;
+  border-right: 2px solid #D4D4D4;
+}
+/* line 15, ../scss/layout/_nav.scss */
+#nav-container .nav, #nav-container .nav ul, #nav-container .nav li {
+  list-style: none;
+}
+/* line 19, ../scss/layout/_nav.scss */
+#nav-container .nav ul {
+  padding: 0;
+  margin: 0 0 0 18px;
+}
+/* line 24, ../scss/layout/_nav.scss */
+#nav-container .nav {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 29, ../scss/layout/_nav.scss */
+#nav-container .nav > li {
+  margin: 4px 0;
+  display: block;
+  box-sizing: border-box;
+  border-top: 1px solid #DDD;
+}
+/* line 36, ../scss/layout/_nav.scss */
+#nav-container .nav > li:first-child {
+  margin-top: 0px;
+}
+/* line 40, ../scss/layout/_nav.scss */
+#nav-container .nav > li:last-child {
+  border-bottom: 1px solid #DDD;
+}
+/* line 44, ../scss/layout/_nav.scss */
+#nav-container .nav > li li {
+  margin: 4px 0;
+  display: block;
+  box-sizing: border-box;
+}
+/* line 55, ../scss/layout/_nav.scss */
+#nav-container .nav a {
+  color: #565656;
+  display: block;
+  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+/* line 65, ../scss/layout/_nav.scss */
+#nav-container .nav li > a > span {
+  float: right;
+  font-size: 19px;
+  font-weight: bolder;
+}
+/* line 71, ../scss/layout/_nav.scss */
+#nav-container .nav li > a:hover > span {
+  color: #000000;
+}
+/* line 75, ../scss/layout/_nav.scss */
+#nav-container .nav li > a > span:after {
+  content: '\25be';
+}
+/* line 78, ../scss/layout/_nav.scss */
+#nav-container .nav li.open > a > span:after {
+  content: '\25b4';
+}
+/* line 82, ../scss/layout/_nav.scss */
+#nav-container .nav a:hover, #nav-container .nav li.active > a {
+  background-color: transparent;
+  color: #000000;
+  font-weight: bold;
+}
+/* line 88, ../scss/layout/_nav.scss */
+#nav-container .nav > li.active > a {
+  background-color: #4D90FE;
+}
+/* line 92, ../scss/layout/_nav.scss */
+#nav-container .nav li a {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 2px 10px;
+}
+/* line 98, ../scss/layout/_nav.scss */
+#nav-container .nav > li > a {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 4px 10px;
+}
+/* line 104, ../scss/layout/_nav.scss */
+#nav-container i {
+  font-size: 1.3em;
+}
+
+/* Breadcums Nav */
+/* line 111, ../scss/layout/_nav.scss */
+#breadcrumbs-nav {
+  margin: 10px 0px;
+}
+
+/* line 2, ../scss/modules/_megadrop.scss */
+.light {
+  font-weight: 200 !important;
+}
+
+/* line 6, ../scss/modules/_megadrop.scss */
+.extra-bold {
+  font-weight: 800 !important;
+}
+
+/* line 10, ../scss/modules/_megadrop.scss */
+.regular {
+  font-weight: normal !important;
+}
+
+/* line 14, ../scss/modules/_megadrop.scss */
+.row.top {
+  border-bottom: #2e2e2e 2px solid;
+  padding-bottom: 0px;
+  margin-bottom: 10px !important;
+}
+
+/* line 20, ../scss/modules/_megadrop.scss */
+.row.top a h4:hover img {
+  opacity: 0.5;
+}
+
+/* line 24, ../scss/modules/_megadrop.scss */
+.row.top h4 img {
+  margin-left: -8px;
+  position: relative;
+  top: 1px;
+}
+
+/* line 30, ../scss/modules/_megadrop.scss */
+.row .right.links {
+  margin-top: 10px;
+}
+
+/* line 34, ../scss/modules/_megadrop.scss */
+.row .right.links a {
+  color: #2e2e2e;
+  font-weight: bold !important;
+  margin: 0px 8px;
+}
+
+/* line 40, ../scss/modules/_megadrop.scss */
+.row .right.links a:hover {
+  color: #159cdd;
+}
+
+/* line 44, ../scss/modules/_megadrop.scss */
+#megadrop-notifications {
+  display: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  /* background:rgba(0,0,0,0.85); */
+  background-image: -webkit-linear-gradient(#f6f6f6, #dbdbdb);
+  background-image: -o-linear-gradient(#f6f6f6, #dbdbdb);
+  background-image: -moz-linear-gradient(#f6f6f6, #dbdbdb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#dbdbdb));
+  background-image: linear-gradient(#f6f6f6, #dbdbdb);
+  color: #2e2e2e;
+  margin-top: -1px !important;
+  padding: 35px 0 40px;
+}
+
+/* line 64, ../scss/modules/_megadrop.scss */
+#megadrop-messages {
+  display: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  /* background:rgba(0,0,0,0.85); */
+  background-image: -webkit-linear-gradient(#f6f6f6, #dbdbdb);
+  background-image: -o-linear-gradient(#f6f6f6, #dbdbdb);
+  background-image: -moz-linear-gradient(#f6f6f6, #dbdbdb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f6f6f6), to(#dbdbdb));
+  background-image: linear-gradient(#f6f6f6, #dbdbdb);
+  color: #2e2e2e;
+  margin-top: -1px !important;
+  padding: 35px 0 40px;
+}
+
+/* line 84, ../scss/modules/_megadrop.scss */
+.toggle-nav {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/plus-toggle-2.png") no-repeat center;
+  opacity: 0.4;
+  z-index: 1;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+}
+
+/* line 97, ../scss/modules/_megadrop.scss */
+.toggle-nav.open {
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  opacity: 0.8;
+  z-index: 1;
+  -moz-transform-origin: center center;
+}
+
+/* line 1, ../scss/theme/_theme.scss */
+.top-bar i {
+  font-size: 1.0em;
+}
+
+/* line 5, ../scss/theme/_theme.scss */
+.row {
+  max-width: none !important;
+  margin-bottom: 5px;
+}
+
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {
+  /* line 22, ../scss/style.scss */
+  #content-container {
+    margin-left: 0px;
+  }
+}
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xxlarge screens */

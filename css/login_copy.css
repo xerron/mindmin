@@ -1,0 +1,1418 @@
+@charset "UTF-8";
+/* line 4, ../scss/login.scss */
+input, textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, ../scss/login.scss */
+input[type=checkbox], input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=radio], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+  border: 1px solid #ddd;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  color: #333;
+  outline: 0;
+  -webkit-transition: .05s border-color ease-in-out;
+  transition: 0.05s border-color ease-in-out;
+}
+
+/* line 21, ../scss/login.scss */
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
+  border-color: #5b9dd9;
+  -webkit-box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
+  box-shadow: 0 0 2px rgba(30, 140, 190, 0.8);
+}
+
+/* line 27, ../scss/login.scss */
+input[type=email], input[type=url] {
+  direction: ltr;
+}
+
+/* line 31, ../scss/login.scss */
+input[type=checkbox], input[type=radio] {
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #555;
+  clear: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+  height: 16px;
+  margin: -4px 4px 0 0;
+  outline: 0;
+  padding: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+  min-width: 16px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .05s border-color ease-in-out;
+  transition: 0.05s border-color ease-in-out;
+}
+
+/* line 54, ../scss/login.scss */
+input[type=radio]:checked + label:before {
+  color: #888;
+}
+
+/* line 58, ../scss/login.scss */
+.wp-core-ui input[type=reset]:active, .wp-core-ui input[type=reset]:hover {
+  color: #2ea2cc;
+}
+
+/* line 62, ../scss/login.scss */
+.wp-admin p input[type=checkbox], .wp-admin p input[type=radio], td > input[type=checkbox] {
+  margin-top: 0;
+}
+
+/* line 66, ../scss/login.scss */
+.wp-admin p label input[type=checkbox] {
+  margin-top: -4px;
+}
+
+/* line 70, ../scss/login.scss */
+.wp-admin p label input[type=radio] {
+  margin-top: -2px;
+}
+
+/* line 74, ../scss/login.scss */
+input[type=radio] {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 4px;
+  line-height: 10px;
+}
+
+/* line 81, ../scss/login.scss */
+input[type=checkbox]:checked:before, input[type=radio]:checked:before {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  font: 400 21px/1 dashicons;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 92, ../scss/login.scss */
+input[type=checkbox]:checked:before {
+  content: '\f147';
+  margin: -3px 0 0 -4px;
+  color: #1e8cbe;
+}
+
+/* line 98, ../scss/login.scss */
+input[type=radio]:checked:before {
+  content: '\2022';
+  text-indent: -9999px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  font-size: 24px;
+  width: 6px;
+  height: 6px;
+  margin: 4px;
+  line-height: 16px;
+  background-color: #1e8cbe;
+}
+
+@-moz-document url-prefix() {
+  /* line 112, ../scss/login.scss */
+  .form-table input.tog, input[type=checkbox], input[type=radio] {
+    margin-bottom: -1px;
+  }
+}
+/* line 117, ../scss/login.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+/* line 121, ../scss/login.scss */
+input[type=search]::-webkit-search-decoration {
+  display: none;
+}
+
+/* line 125, ../scss/login.scss */
+.ie8 input[type=password] {
+  font-family: sans-serif;
+}
+
+/* line 129, ../scss/login.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* line 135, ../scss/login.scss */
+input, select, textarea {
+  font-size: 14px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 141, ../scss/login.scss */
+textarea {
+  overflow: auto;
+  padding: 2px 6px;
+  line-height: 1.4;
+}
+
+/* line 147, ../scss/login.scss */
+.wp-admin input[type=file] {
+  padding: 3px 0;
+}
+
+/* line 151, ../scss/login.scss */
+label {
+  cursor: pointer;
+}
+
+/* line 155, ../scss/login.scss */
+input, select {
+  margin: 1px;
+  padding: 3px 5px;
+}
+
+/* line 160, ../scss/login.scss */
+input.code {
+  padding-top: 6px;
+}
+
+/* line 164, ../scss/login.scss */
+textarea.code {
+  line-height: 1.4;
+  padding: 4px 6px 1px;
+}
+
+/* line 169, ../scss/login.scss */
+input.readonly, input[readonly], textarea.readonly, textarea[readonly] {
+  background-color: #eee;
+}
+
+/* line 173, ../scss/login.scss */
+.wp-core-ui :-moz-placeholder, :-moz-placeholder {
+  color: #a9a9a9;
+}
+
+/* line 177, ../scss/login.scss */
+.form-invalid {
+  background-color: #ffebe8 !important;
+}
+
+/* line 181, ../scss/login.scss */
+.form-invalid input, .form-invalid select {
+  border-color: #c00 !important;
+}
+
+/* line 185, ../scss/login.scss */
+.form-input-tip {
+  color: #666;
+}
+
+/* line 189, ../scss/login.scss */
+input.disabled, input:disabled, select.disabled, select:disabled, textarea.disabled, textarea:disabled {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(222, 222, 222, 0.75);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  color: rgba(51, 51, 51, 0.5);
+}
+
+/* line 197, ../scss/login.scss */
+input[type=file].disabled, input[type=file]:disabled, input[type=range].disabled, input[type=range]:disabled {
+  background: 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 203, ../scss/login.scss */
+input[type=checkbox].disabled, input[type=checkbox].disabled:checked:before, input[type=checkbox]:disabled, input[type=checkbox]:disabled:checked:before, input[type=radio].disabled, input[type=radio].disabled:checked:before, input[type=radio]:disabled, input[type=radio]:disabled:checked:before {
+  opacity: 0.7;
+}
+
+/* line 207, ../scss/login.scss */
+.wp-admin select {
+  padding: 2px;
+  line-height: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+/* line 214, ../scss/login.scss */
+.wp-admin .button-cancel {
+  padding: 0 5px;
+  line-height: 2;
+}
+
+/* line 219, ../scss/login.scss */
+.meta-box-sortables select {
+  max-width: 100%;
+}
+
+/* line 223, ../scss/login.scss */
+.wp-admin select[multiple] {
+  height: auto;
+}
+
+/* line 227, ../scss/login.scss */
+.submit {
+  padding: 1.5em 0;
+  margin: 5px 0;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: none;
+}
+
+/* line 237, ../scss/login.scss */
+form p.submit a.cancel:hover {
+  text-decoration: none;
+}
+
+/* line 241, ../scss/login.scss */
+p.submit {
+  text-align: left;
+  max-width: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* line 248, ../scss/login.scss */
+.textright p.submit {
+  border: none;
+  text-align: right;
+}
+
+/* line 253, ../scss/login.scss */
+table.form-table + input + input + p.submit, table.form-table + input + p.submit, table.form-table + p.submit {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* line 258, ../scss/login.scss */
+#major-publishing-actions input, #minor-publishing-actions .preview, #minor-publishing-actions input {
+  text-align: center;
+}
+
+/* line 262, ../scss/login.scss */
+input.all-options, textarea.all-options {
+  width: 250px;
+}
+
+/* line 266, ../scss/login.scss */
+input.large-text, textarea.large-text {
+  width: 99%;
+}
+
+/* line 270, ../scss/login.scss */
+#adduser .form-field input, input.regular-text {
+  width: 25em;
+}
+
+/* line 274, ../scss/login.scss */
+input.small-text {
+  width: 50px;
+  padding: 1px 6px;
+}
+
+/* line 279, ../scss/login.scss */
+input[type=number].small-text {
+  width: 65px;
+}
+
+/* line 283, ../scss/login.scss */
+#doaction, #doaction2, #post-query-submit {
+  margin: 1px 8px 0 0;
+}
+
+/* line 287, ../scss/login.scss */
+.tablenav #changeit, .tablenav #clear-recent-list, .tablenav #delete_all, .wp-filter #delete_all {
+  margin-top: 1px;
+}
+
+/* line 291, ../scss/login.scss */
+.tablenav .actions select {
+  float: left;
+  margin-right: 6px;
+  max-width: 200px;
+}
+
+/* line 297, ../scss/login.scss */
+.ie8 .tablenav .actions select {
+  width: 155px;
+}
+
+/* line 301, ../scss/login.scss */
+.ie8 .tablenav .actions select#cat {
+  width: 200px;
+}
+
+/* line 305, ../scss/login.scss */
+#timezone_string option {
+  margin-left: 1em;
+}
+
+/* line 309, ../scss/login.scss */
+#upload-form label {
+  color: #777;
+}
+
+/* line 313, ../scss/login.scss */
+#your-profile label + a, fieldset label, label {
+  vertical-align: middle;
+}
+
+/* line 317, ../scss/login.scss */
+#misc-publishing-actions label, .options-media-php label[for*="_size_"] {
+  vertical-align: baseline;
+}
+
+/* line 321, ../scss/login.scss */
+#misc-publishing-actions label[for=post_status]:before {
+  content: '\f173';
+  display: inline-block;
+  font: 400 20px/1 dashicons;
+  speak: none;
+  left: -1px;
+  padding: 0 5px 0 0;
+  position: relative;
+  top: 0;
+  text-decoration: none !important;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 336, ../scss/login.scss */
+#pass-strength-result {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  float: left;
+  margin: 13px 5px 5px 1px;
+  padding: 3px 5px;
+  text-align: center;
+  width: 200px;
+  display: none;
+}
+
+/* line 347, ../scss/login.scss */
+#pass-strength-result.short {
+  background-color: #ffa0a0;
+  border-color: #f04040;
+}
+
+/* line 352, ../scss/login.scss */
+#pass-strength-result.bad {
+  background-color: #ffb78c;
+  border-color: #ff853c;
+}
+
+/* line 357, ../scss/login.scss */
+#pass-strength-result.good {
+  background-color: #ffec8b;
+  border-color: #fc0;
+}
+
+/* line 362, ../scss/login.scss */
+#pass-strength-result.strong {
+  background-color: #c3ff88;
+  border-color: #8dff1c;
+}
+
+/* line 367, ../scss/login.scss */
+.indicator-hint {
+  padding-top: 8px;
+}
+
+/* line 371, ../scss/login.scss */
+p.search-box {
+  float: right;
+  margin: 0;
+}
+
+/* line 376, ../scss/login.scss */
+.network-admin.themes-php p.search-box {
+  clear: left;
+}
+
+/* line 380, ../scss/login.scss */
+.search-box input[name="s"], .tablenav .search-plugins input[name="s"], .tagsdiv .newtag {
+  float: left;
+  height: 28px;
+  margin: 0 4px 0 0;
+}
+
+/* line 386, ../scss/login.scss */
+input[type=text].ui-autocomplete-loading {
+  background: url(../images/loading.gif) right center no-repeat;
+  visibility: visible;
+}
+
+/* line 391, ../scss/login.scss */
+ul#add-to-blog-users {
+  margin: 0 0 0 14px;
+}
+
+/* line 395, ../scss/login.scss */
+.ui-autocomplete-input.open {
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* line 402, ../scss/login.scss */
+.ui-autocomplete {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  z-index: 10000;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #aaa;
+  background-color: #efefef;
+}
+
+/* line 416, ../scss/login.scss */
+.ui-autocomplete li {
+  margin-bottom: 0;
+  white-space: nowrap;
+  text-align: left;
+}
+
+/* line 422, ../scss/login.scss */
+.ui-autocomplete li a {
+  display: block;
+  height: 100%;
+  padding: 4px 10px;
+  color: #444;
+}
+
+/* line 429, ../scss/login.scss */
+.ui-autocomplete li a.ui-state-focus {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* line 434, ../scss/login.scss */
+.form-table {
+  border-collapse: collapse;
+  margin-top: .5em;
+  width: 100%;
+  clear: both;
+}
+
+/* line 441, ../scss/login.scss */
+.form-table, .form-table td, .form-table td p, .form-table th, .form-wrap label {
+  font-size: 14px;
+}
+
+/* line 445, ../scss/login.scss */
+.form-table td {
+  margin-bottom: 9px;
+  padding: 15px 10px;
+  line-height: 1.3;
+  vertical-align: middle;
+}
+
+/* line 452, ../scss/login.scss */
+.form-table th, .form-wrap label {
+  color: #222;
+  font-weight: 400;
+  text-shadow: none;
+  vertical-align: baseline;
+}
+
+/* line 459, ../scss/login.scss */
+.form-table th {
+  vertical-align: top;
+  text-align: left;
+  padding: 20px 10px 20px 0;
+  width: 200px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+/* line 468, ../scss/login.scss */
+.form-table th.th-full {
+  width: auto;
+  font-weight: 400;
+}
+
+/* line 473, ../scss/login.scss */
+.form-table td p {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+/* line 478, ../scss/login.scss */
+.form-table td fieldset label {
+  margin: .25em 0 .5em !important;
+  display: inline-block;
+}
+
+/* line 483, ../scss/login.scss */
+.form-table td fieldset label, .form-table td fieldset li, .form-table td fieldset p {
+  line-height: 1.4em;
+}
+
+/* line 487, ../scss/login.scss */
+.form-table input.tog, .form-table input[type=radio] {
+  margin-top: -4px;
+  margin-right: 4px;
+  float: none;
+}
+
+/* line 493, ../scss/login.scss */
+.form-table .pre {
+  padding: 8px;
+  margin: 0;
+}
+
+/* line 498, ../scss/login.scss */
+table.form-table td .updated {
+  font-size: 13px;
+}
+
+/* line 502, ../scss/login.scss */
+table.form-table td .updated p {
+  font-size: 13px;
+  margin: 0.3em 0;
+}
+
+/* line 507, ../scss/login.scss */
+#profile-page .form-table textarea {
+  width: 500px;
+  margin-bottom: 6px;
+}
+
+/* line 512, ../scss/login.scss */
+#profile-page .form-table #rich_editing {
+  margin-right: 5px;
+}
+
+/* line 516, ../scss/login.scss */
+#your-profile legend {
+  font-size: 22px;
+}
+
+/* line 520, ../scss/login.scss */
+#display_name {
+  width: 15em;
+}
+
+/* line 524, ../scss/login.scss */
+#createuser .form-field input {
+  width: 25em;
+}
+
+/* line 528, ../scss/login.scss */
+.color-option {
+  display: inline-block;
+  width: 24%;
+  padding: 5px 15px 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 3px;
+}
+
+/* line 538, ../scss/login.scss */
+.color-option.selected, .color-option:hover {
+  background: #ddd;
+}
+
+/* line 542, ../scss/login.scss */
+.color-palette {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* line 548, ../scss/login.scss */
+.color-palette td {
+  height: 20px;
+  padding: 0;
+  border: none;
+}
+
+/* line 554, ../scss/login.scss */
+.color-option {
+  cursor: pointer;
+}
+
+/* line 558, ../scss/login.scss */
+.tool-box .title {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* line 565, ../scss/login.scss */
+.pressthis {
+  margin: 20px 0;
+}
+
+/* line 569, ../scss/login.scss */
+.pressthis a, .pressthis a:active, .pressthis a:focus, .pressthis a:hover {
+  display: inline-block;
+  position: relative;
+  cursor: move;
+  color: #333;
+  background: #e6e6e6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #b4b4b4;
+  font-style: normal;
+  line-height: 16px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* line 584, ../scss/login.scss */
+.pressthis a:active {
+  outline: 0;
+}
+
+/* line 588, ../scss/login.scss */
+.pressthis a:hover:after {
+  -webkit-transform: skew(20deg) rotate(9deg);
+  -ms-transform: skew(20deg) rotate(9deg);
+  transform: skew(20deg) rotate(9deg);
+  -webkit-box-shadow: 0 10px 8px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* line 596, ../scss/login.scss */
+.pressthis a span {
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px 8px 9px;
+}
+
+/* line 602, ../scss/login.scss */
+.pressthis a span:before {
+  color: #777;
+  font: 400 20px/1 dashicons;
+  content: '\f157';
+  position: relative;
+  display: inline-block;
+  top: 4px;
+  margin-right: 4px;
+}
+
+/* line 612, ../scss/login.scss */
+.pressthis a:after {
+  content: '';
+  width: 70%;
+  height: 55%;
+  z-index: -1;
+  position: absolute;
+  right: 10px;
+  bottom: 9px;
+  background: 0 0;
+  -webkit-transform: skew(20deg) rotate(6deg);
+  -ms-transform: skew(20deg) rotate(6deg);
+  transform: skew(20deg) rotate(6deg);
+  -webkit-box-shadow: 0 10px 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* line 628, ../scss/login.scss */
+#local-time, #utc-time {
+  padding-left: 25px;
+  font-style: italic;
+}
+
+/* line 633, ../scss/login.scss */
+.defaultavatarpicker .avatar {
+  margin: 2px 0;
+  vertical-align: middle;
+}
+
+/* line 638, ../scss/login.scss */
+.options-general-php .spinner {
+  float: none;
+  margin: -3px 3px;
+}
+
+/* line 643, ../scss/login.scss */
+.options-general-php .language-install-spinner, .settings-php .language-install-spinner {
+  display: inline-block;
+  float: none;
+  margin: -3px 5px 0;
+  vertical-align: middle;
+}
+
+/* line 650, ../scss/login.scss */
+.form-field #site-address {
+  max-width: 25em;
+}
+
+/* line 654, ../scss/login.scss */
+.form-field #domain {
+  max-width: 22em;
+}
+
+/* line 658, ../scss/login.scss */
+.form-field #admin-email, .form-field #blog_last_updated, .form-field #blog_registered, .form-field #path, .form-field #site-title {
+  max-width: 25em;
+}
+
+/* line 662, ../scss/login.scss */
+.form-field #path {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 782px) {
+  /* line 667, ../scss/login.scss */
+  textarea {
+    -webkit-appearance: none;
+  }
+
+  /* line 670, ../scss/login.scss */
+  input[type=email], input[type=number], input[type=password], input[type=search], input[type=text] {
+    -webkit-appearance: none;
+    padding: 6px 10px;
+  }
+
+  /* line 674, ../scss/login.scss */
+  input.code {
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+
+  /* line 678, ../scss/login.scss */
+  .widefat th input[type=checkbox], input[type=checkbox] {
+    -webkit-appearance: none;
+    padding: 10px;
+  }
+
+  /* line 682, ../scss/login.scss */
+  .widefat th input[type=checkbox] {
+    margin-bottom: 8px;
+  }
+
+  /* line 685, ../scss/login.scss */
+  .widefat th input[type=checkbox]:before, input[type=checkbox]:checked:before {
+    font: 400 30px/1 Dashicons;
+    margin: -3px -5px;
+  }
+
+  /* line 689, ../scss/login.scss */
+  input[type=checkbox], input[type=radio] {
+    height: 25px;
+    width: 25px;
+  }
+
+  /* line 693, ../scss/login.scss */
+  .wp-admin p input[type=checkbox], .wp-admin p input[type=radio] {
+    margin-top: -3px;
+  }
+
+  /* line 696, ../scss/login.scss */
+  input[type=radio]:checked:before {
+    vertical-align: middle;
+    width: 9px;
+    height: 9px;
+    margin: 7px;
+    line-height: 16px;
+  }
+
+  /* line 703, ../scss/login.scss */
+  .wp-upload-form input[type=submit] {
+    margin-top: 10px;
+  }
+
+  /* line 706, ../scss/login.scss */
+  #wpbody select {
+    height: 36px;
+    font-size: 16px;
+  }
+
+  /* line 710, ../scss/login.scss */
+  .wp-admin .button-cancel {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  /* line 714, ../scss/login.scss */
+  #createuser .form-field input {
+    width: 100%;
+  }
+
+  /* line 717, ../scss/login.scss */
+  .form-table {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 722, ../scss/login.scss */
+  .form-table td, .form-table th {
+    display: block;
+    width: auto;
+    vertical-align: middle;
+  }
+
+  /* line 727, ../scss/login.scss */
+  .form-table .color-palette td {
+    display: table-cell;
+    width: 15px;
+  }
+
+  /* line 731, ../scss/login.scss */
+  .form-table table.color-palette {
+    margin-right: 10px;
+  }
+
+  /* line 734, ../scss/login.scss */
+  input, textarea {
+    font-size: 16px;
+  }
+
+  /* line 737, ../scss/login.scss */
+  #profile-page .form-table textarea, .form-table span.description, .form-table td input[type=email], .form-table td input[type=password], .form-table td input[type=text], .form-table td select, .form-table td textarea {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 7px 10px;
+    display: block;
+    max-width: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 748, ../scss/login.scss */
+  #wpbody .form-table td select {
+    height: 40px;
+  }
+
+  /* line 751, ../scss/login.scss */
+  .form-table input[type=text].small-text, input[type=number].small-text, input[type=password].small-text, input[type=search].small-text, input[type=text].small-text {
+    width: auto;
+    max-width: 55px;
+    display: inline;
+    padding: 3px 6px;
+    margin: 0 3px;
+  }
+
+  /* line 758, ../scss/login.scss */
+  #pass-strength-result {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+
+  /* line 765, ../scss/login.scss */
+  p.search-box {
+    float: none;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    height: 90px;
+    margin-bottom: 20px;
+  }
+
+  /* line 773, ../scss/login.scss */
+  p.search-box input[name="s"] {
+    height: auto;
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+  }
+
+  /* line 781, ../scss/login.scss */
+  p.search-box input[type=submit] {
+    margin-bottom: 10px;
+  }
+
+  /* line 784, ../scss/login.scss */
+  .form-table span.description {
+    padding: 4px 0 0;
+    line-height: 1.4em;
+  }
+
+  /* line 788, ../scss/login.scss */
+  .form-table th {
+    padding-top: 10px;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  /* line 793, ../scss/login.scss */
+  .form-table td {
+    padding-top: 8px;
+    padding-left: 0;
+  }
+
+  /* line 797, ../scss/login.scss */
+  .form-table input.regular-text {
+    width: 100%;
+  }
+
+  /* line 800, ../scss/login.scss */
+  .form-table label {
+    font-size: 14px;
+  }
+
+  /* line 803, ../scss/login.scss */
+  .form-table fieldset label {
+    display: block;
+  }
+
+  /* line 806, ../scss/login.scss */
+  #utc-time {
+    margin-top: 10px;
+  }
+
+  /* line 809, ../scss/login.scss */
+  #local-time, #utc-time {
+    display: block;
+    float: none;
+    padding: 0;
+    line-height: 2;
+  }
+
+  /* line 815, ../scss/login.scss */
+  .form-field #domain {
+    max-width: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 821, ../scss/login.scss */
+  .form-field input[type=email], .form-field input[type=password], .form-field input[type=text], .form-field select, .form-field textarea {
+    width: 99%;
+  }
+
+  /* line 824, ../scss/login.scss */
+  .form-wrap .form-field {
+    padding: 0;
+  }
+
+  /* line 827, ../scss/login.scss */
+  #profile-page .form-table textarea {
+    max-width: 400px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 834, ../scss/login.scss */
+  .color-option {
+    width: 49%;
+  }
+}
+/* line 839, ../scss/login.scss */
+body.rtl, body.rtl .press-this a.wp-switch-editor {
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+/* line 843, ../scss/login.scss */
+body.locale-he-il, body.locale-he-il .press-this a.wp-switch-editor {
+  font-family: Arial, sans-serif;
+}
+
+/* line 847, ../scss/login.scss */
+.locale-he-il em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* line 852, ../scss/login.scss */
+.locale-zh-cn #local-time, .locale-zh-cn #utc-time, .locale-zh-cn .form-wrap p, .locale-zh-cn .howto, .locale-zh-cn .inline-edit-row fieldset span.checkbox-title, .locale-zh-cn .inline-edit-row fieldset span.title, .locale-zh-cn .js .input-with-default-title, .locale-zh-cn .link-to-original, .locale-zh-cn .tablenav .displaying-num, .locale-zh-cn p.description, .locale-zh-cn p.help, .locale-zh-cn p.install-help, .locale-zh-cn span.description {
+  font-style: normal;
+}
+
+/* line 856, ../scss/login.scss */
+.locale-zh-cn .hdnle a {
+  font-size: 12px;
+}
+
+/* line 860, ../scss/login.scss */
+.locale-zh-cn form.upgrade .hint {
+  font-style: normal;
+  font-size: 100%;
+}
+
+/* line 865, ../scss/login.scss */
+.locale-zh-cn #wp-fullscreen-tagline {
+  font-family: KaiTi, "æ¥·ä½“", sans-serif;
+}
+
+/* line 869, ../scss/login.scss */
+.locale-zh-cn #wp-fullscreen-modes a {
+  font-size: 12px;
+}
+
+/* line 873, ../scss/login.scss */
+.locale-zh-cn #sort-buttons {
+  font-size: 1em !important;
+}
+
+/* line 877, ../scss/login.scss */
+.locale-de-de .inline-edit-row fieldset label span.title {
+  width: 7em;
+}
+
+/* line 881, ../scss/login.scss */
+.locale-de-de .inline-edit-row fieldset label span.input-text-wrap {
+  margin-left: 7em;
+}
+
+/* line 885, ../scss/login.scss */
+.locale-de-de #customize-header-actions .button {
+  padding: 0 5px 1px;
+}
+
+/* line 889, ../scss/login.scss */
+.locale-de-de #customize-header-actions .spinner {
+  margin: 16px 3px 0;
+}
+
+/* line 893, ../scss/login.scss */
+.locale-ru-ru .inline-edit-row fieldset label span.title {
+  width: 8em;
+}
+
+/* line 897, ../scss/login.scss */
+.locale-ru-ru .inline-edit-row fieldset label span.input-text-wrap {
+  margin-left: 8em;
+}
+
+/* line 901, ../scss/login.scss */
+.locale-ru-ru.post-new-php .tagsdiv .newtag, .locale-ru-ru.post-php .tagsdiv .newtag {
+  width: 165px;
+}
+
+/* line 905, ../scss/login.scss */
+.locale-ru-ru.press-this .posting {
+  margin-right: 277px;
+}
+
+/* line 909, ../scss/login.scss */
+.locale-ru-ru .press-this-sidebar {
+  width: 265px;
+}
+
+/* line 913, ../scss/login.scss */
+.locale-ru-ru #customize-header-actions .button {
+  padding: 0 5px 1px;
+}
+
+/* line 917, ../scss/login.scss */
+.locale-ru-ru #customize-header-actions .spinner {
+  margin: 16px 3px 0;
+}
+
+/* line 921, ../scss/login.scss */
+.locale-lt-lt .inline-edit-row fieldset label span.title {
+  width: 8em;
+}
+
+/* line 925, ../scss/login.scss */
+.locale-lt-lt .inline-edit-row fieldset label span.input-text-wrap {
+  margin-left: 8em;
+}
+
+/* line 929, ../scss/login.scss */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 935, ../scss/login.scss */
+html {
+  background: #f1f1f1;
+}
+
+/* line 939, ../scss/login.scss */
+body {
+  background: #f1f1f1;
+  min-width: 0;
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.4em;
+}
+
+/* line 948, ../scss/login.scss */
+a {
+  color: #0074a2;
+  -webkit-transition-property: border, background, color;
+  transition-property: border, background, color;
+  -webkit-transition-duration: .05s;
+  transition-duration: .05s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  outline: 0;
+}
+
+/* line 959, ../scss/login.scss */
+a:active, a:hover {
+  color: #2ea2cc;
+}
+
+/* line 963, ../scss/login.scss */
+a:focus {
+  color: #124964;
+}
+
+/* line 967, ../scss/login.scss */
+a:active, a:focus {
+  outline: dotted thin;
+}
+
+/* line 971, ../scss/login.scss */
+p {
+  line-height: 1.5;
+}
+
+/* line 975, ../scss/login.scss */
+.login .message {
+  border-left: 4px solid #2ea2cc;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 982, ../scss/login.scss */
+.login #login_error {
+  border-left: 4px solid #dd3d36;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* line 989, ../scss/login.scss */
+#loginform p.submit, .login-action-lostpassword p.submit {
+  border: none;
+  margin: -10px 0 20px;
+}
+
+/* line 994, ../scss/login.scss */
+.login * {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 999, ../scss/login.scss */
+.login form {
+  margin-top: 20px;
+  margin-left: 0;
+  padding: 26px 24px 46px;
+  font-weight: 400;
+  overflow: hidden;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+/* line 1010, ../scss/login.scss */
+.login form .forgetmenot {
+  font-weight: 400;
+  float: left;
+  margin-bottom: 0;
+}
+
+/* line 1016, ../scss/login.scss */
+.login .button-primary {
+  float: right;
+}
+
+/* line 1020, ../scss/login.scss */
+#login form p {
+  margin-bottom: 0;
+}
+
+/* line 1024, ../scss/login.scss */
+#login form p.submit {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1029, ../scss/login.scss */
+.login label {
+  color: #777;
+  font-size: 14px;
+}
+
+/* line 1034, ../scss/login.scss */
+.login form .forgetmenot label {
+  font-size: 12px;
+  line-height: 19px;
+}
+
+/* line 1039, ../scss/login.scss */
+.login h1 {
+  text-align: center;
+}
+
+/* line 1043, ../scss/login.scss */
+.login h1 a {
+  background-image: url(../images/w-logo-blue.png?ver=20131202);
+  background-image: none, url(../images/wordpress-logo.svg?ver=20131107);
+  -webkit-background-size: 84px;
+  background-size: 84px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #999;
+  height: 84px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0 auto 25px;
+  padding: 0;
+  text-decoration: none;
+  width: 84px;
+  text-indent: -9999px;
+  outline: 0;
+  overflow: hidden;
+  display: block;
+}
+
+/* line 1065, ../scss/login.scss */
+#login {
+  width: 320px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+/* line 1071, ../scss/login.scss */
+#login_error, .login .message {
+  margin-left: 0;
+  padding: 12px;
+}
+
+/* line 1076, ../scss/login.scss */
+.login #backtoblog, .login #nav {
+  font-size: 13px;
+  padding: 0 24px;
+}
+
+/* line 1081, ../scss/login.scss */
+.login #nav {
+  margin: 24px 0 0;
+}
+
+/* line 1085, ../scss/login.scss */
+#backtoblog {
+  margin: 16px 0 0;
+}
+
+/* line 1089, ../scss/login.scss */
+.login #backtoblog a, .login #nav a {
+  text-decoration: none;
+  color: #999;
+}
+
+/* line 1094, ../scss/login.scss */
+.login #backtoblog a:hover, .login #nav a:hover, .login h1 a:hover {
+  color: #2ea2cc;
+}
+
+/* line 1098, ../scss/login.scss */
+.login form .input, .login input[type=text] {
+  font-size: 24px;
+  width: 100%;
+  padding: 3px;
+  margin: 2px 6px 16px 0;
+}
+
+/* line 1105, ../scss/login.scss */
+.login form .input, .login form input[type=checkbox], .login input[type=text] {
+  background: #fbfbfb;
+}
+
+/* line 1109, ../scss/login.scss */
+.ie7 .login form .input, .ie8 .login form .input {
+  font-family: sans-serif;
+}
+
+/* line 1113, ../scss/login.scss */
+.login #pass-strength-result {
+  width: 250px;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  padding: 6px 5px;
+  text-align: center;
+}
+
+/* line 1121, ../scss/login.scss */
+.mobile #login {
+  padding: 20px 0;
+}
+
+/* line 1125, ../scss/login.scss */
+.mobile #login .message, .mobile #login form, .mobile #login_error {
+  margin-left: 0;
+}
+
+/* line 1129, ../scss/login.scss */
+.mobile #login #backtoblog, .mobile #login #nav {
+  margin-left: 8px;
+}
+
+/* line 1133, ../scss/login.scss */
+.mobile #login h1 a {
+  width: auto;
+}
+
+/* line 1137, ../scss/login.scss */
+body.interim-login {
+  height: auto;
+}
+
+/* line 1141, ../scss/login.scss */
+.interim-login #login {
+  padding: 0;
+  margin: 5px auto 20px;
+}
+
+/* line 1146, ../scss/login.scss */
+.interim-login.login h1 a {
+  width: auto;
+}
+
+/* line 1150, ../scss/login.scss */
+.interim-login #login_error, .interim-login.login .message {
+  margin: 0 0 16px;
+}
+
+/* line 1154, ../scss/login.scss */
+.interim-login.login form {
+  margin: 0;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+@media screen and (max-width: 782px) {
+  /* line 1163, ../scss/login.scss */
+  .interim-login input[type=checkbox] {
+    height: 16px;
+    width: 16px;
+  }
+
+  /* line 1167, ../scss/login.scss */
+  .interim-login input[type=checkbox]:checked:before {
+    width: 16px;
+    font: 400 21px/1 dashicons;
+    margin: -3px 0 0 -4px;
+  }
+}
